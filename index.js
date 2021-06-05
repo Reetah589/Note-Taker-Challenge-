@@ -1,6 +1,17 @@
 const express = require('express');
 const app = express();
 
+// add a listen() method 
+// server.listen(); or app.listen();
+
+// will i need to get a port server number?
+
+// app.get('', (req, res) => {
+//  res.send('');
+//  }); 
+
+// what is function filterByQuery()?
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
