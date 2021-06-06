@@ -1,19 +1,29 @@
-const express = require('express');
-const app = express();
+// Run the command to init express.js without answering the questionnaire.
+// npm init -y
+// Run this command for npm install shortcut
+// npm i express
+
+
+//start by creating a route that the front-end can request data from
+var express = require('express')
+var app = express()
 
 // add a listen() method 
+// code initiates the server
 // server.listen(); or app.listen();
-
-// will i need to get a port server number?
+// will i need to get a port server number? Code below is a sample.
+app.listen(3001, () => {
+  console.log(`API server now on port 3001!`);
+});
 
 // app.get('', (req, res) => {
-//  res.send('');
+//  res.send(''); or res.json
 //  }); 
 
 // what is function filterByQuery()?
+//How do i pass a query in GET request
 
 // Heroku CLI download
-
 
 let noteTitle;
 let noteText;
